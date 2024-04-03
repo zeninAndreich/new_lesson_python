@@ -32,10 +32,10 @@ class Mag(Base):
         self.typevnesh = typevnesh
 
     def ognenny_shar(self):
-        print('Нвнесен урон - {5+self.bazovy_uron} огненным шаром, перезарядка составит 5 секунд')
+        print(f'Нвнесен урон - {5+self.bazovy_uron} огненным шаром, перезарядка составит 5 секунд')
 
     def zamorozka(self):
-        print('Применена заморозка - {1+self.bazovy_uron} урон')
+        print(f'Применена заморозка - {1+self.bazovy_uron} урон')
 
     def hills(self):
         super().healing()
@@ -62,16 +62,16 @@ class Voin(Base):
         self.typevnesh = typevnesh
 
     def udar_mechom(self):
-        print('Нанесено {2+self.bazovy_uron} урона мечом')
+        print(f'Нанесено {2+self.bazovy_uron} урона мечом')
 
     def udar_shitom(self):
-        print('Нанесено {1+self.bazovy_uron} урон щитом')
+        print(f'Нанесено {1+self.bazovy_uron} урон щитом')
 
     def hills(self):
         super().healing()
 
     def info(self):
-        print(f'Класс ВОИН')
+        print(f'\nКласс ВОИН')
         print(f'Ник: {self.nik}')
         print(f'Раса: {self.rasa}')
         print(f'Пол: {self.pol}')
