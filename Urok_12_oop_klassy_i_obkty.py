@@ -1,3 +1,5 @@
+from Urok_12_oop_osnovnoy_klass import Base
+
 """
 Задание
 
@@ -20,8 +22,9 @@
 """
 
 
-class Mag:
-    def __init__(self, nik, rasa, pol, colorvolos, typevnesh):
+class Mag(Base):
+    def __init__(self, nik, rasa, pol, colorvolos, typevnesh, bazovy_uron, zdorovie):
+        super().__init__(bazovy_uron, zdorovie)
         self.nik = nik
         self.rasa = rasa
         self.pol = pol
@@ -29,13 +32,13 @@ class Mag:
         self.typevnesh = typevnesh
 
     def ognenny_shar(self):
-        print('Нвнесен урон = 5 огненным шаром, перезарядка составит 5 секунд')
+        print('Нвнесен урон - {5+self.bazovy_uron} огненным шаром, перезарядка составит 5 секунд')
 
     def zamorozka(self):
-        print('Применена заморозка - 1 урон')
+        print('Применена заморозка - {1+self.bazovy_uron} урон')
 
-    def iscelenie(self):
-        print('Восстановлено 5 единиц здоровья')
+    def hills(self):
+        super().healing()
 
     def info(self):
         print(f'Класс МАГ')
@@ -44,11 +47,14 @@ class Mag:
         print(f'Пол: {self.pol}')
         print(f'Цвет волос: {self.colorvolos}')
         print(f'Тип внешности: {self.typevnesh}')
-        print(f'Доступно: \nognenny_shar - огненный шар\nzamorozka - заморозка \niscelenie - исцеление')
+        print(f'Доступно: \nognenny_shar - огненный шар\nzamorozka - заморозка \nhills - исцеление')
+        self.ognenny_shar()
+        self.zamorozka()
 
 
-class Voin:
-    def __init__(self, nik, rasa, pol, colorvolos, typevnesh):
+class Voin(Base):
+    def __init__(self, nik, rasa, pol, colorvolos, typevnesh, bazovy_uron, zdorovie):
+        super().__init__(bazovy_uron, zdorovie)
         self.nik = nik
         self.rasa = rasa
         self.pol = pol
@@ -56,13 +62,13 @@ class Voin:
         self.typevnesh = typevnesh
 
     def udar_mechom(self):
-        print('Нанесено 2 урона мечом')
+        print('Нанесено {2+self.bazovy_uron} урона мечом')
 
     def udar_shitom(self):
-        print('Нанесено 1 урон щитом')
+        print('Нанесено {1+self.bazovy_uron} урон щитом')
 
-    def zdorovie(self):
-        print('Восстановлено 5 единиц здоровья')
+    def hills(self):
+        super().healing()
 
     def info(self):
         print(f'Класс ВОИН')
@@ -71,7 +77,9 @@ class Voin:
         print(f'Пол: {self.pol}')
         print(f'Цвет волос: {self.colorvolos}')
         print(f'Тип внешности: {self.typevnesh}')
-        print(f'Доступно:\nudar_mechom - удар мечом\nudar_shitom - удар щитом\nzdorovie - исцеление')
+        print(f'Доступно:\nudar_mechom - удар мечом\nudar_shitom - удар щитом\nhills - исцеление')
+        self.udar_mechom()
+        self.udar_shitom()
 
 
 pers = (input('Какого класса вы хотите создать персонажа? \n 1 - Маг\n 2 - Воин\n'))
@@ -81,11 +89,14 @@ if pers:
     pol = input('Введите пол персонажа (Мужской\nЖенский) :')
     colorvolos = input('Введите цвет волос персонажа: ')
     typevnesh = input('Введите тип внешности персонажа (Драмматик\nГамин\nРомантик\nКлассик\nДругое): ')
+    bazovy_uron = int(input('Введите базовый урон: '))
+    zdorovie = int(input('Введите здоровье: '))
 
     if pers == '1':
-        personage = Mag(nik, rasa, pol, colorvolos, typevnesh)
+        personage = Mag(nik, rasa, pol, colorvolos, typevnesh, bazovy_uron, zdorovie)
 
     elif pers == '2':
-        personage = Voin(nik, rasa, pol, colorvolos, typevnesh)
+        personage = Voin(nik, rasa, pol, colorvolos, typevnesh, bazovy_uron, zdorovie)
+
 
 personage.info()
