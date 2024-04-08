@@ -1,0 +1,72 @@
+{
+    "0": {
+        "text": "January 5th is the day in 1944 that the Daily Mail becomes the first transoceanic newspaper.",
+        "year": 1944,
+        "number": 5,
+        "found": true,
+        "type": "date"
+    },
+    "1": {
+        "text": "August 10th is the day in 1793 that the Musée du Louvre is officially opened in Paris, France.",
+        "year": 1793,
+        "number": 223,
+        "found": true,
+        "type": "date"
+    },
+    "2": {
+        "text": "April 18th is the day in 1906 that an earthquake and fire destroy much of San Francisco, California.",
+        "year": 1906,
+        "number": 109,
+        "found": true,
+        "type": "date"
+    },
+    "3": {
+        "text": "June 27th is the day in 1844 that Joseph Smith, Jr., founder of the Latter Day Saint movement, and his brother Hyrum Smith, are murdered by a mob at the Carthage, Illinois jail.",
+        "year": 1844,
+        "number": 179,
+        "found": true,
+        "type": "date"
+    },
+    "4": {
+        "text": "August 20th is the day in 1775 that the Spanish establish the Presidio San Augustin del Tucson in the town that became Tucson, Arizona.",
+        "year": 1775,
+        "number": 233,
+        "found": true,
+        "type": "date"
+    },
+    "5": {
+        "text": "September 21st is the day in 1981 that Belize is granted full independence from the United Kingdom.",
+        "year": 1981,
+        "number": 265,
+        "found": true,
+        "type": "date"
+    },
+    "6": {
+        "text": "October 14th is the day in 1898 that the steamer ship SS Mohegan sinks after impacting the Manacles near Cornwall, United Kingdom, killing 106.",
+        "year": 1898,
+        "number": 288,
+        "found": true,
+        "type": "date"
+    },
+    "7": {
+        "text": "March 15th is the day in 1990 that Mikhail Gorbachev is elected as the first President of the Soviet Union.",
+        "year": 1990,
+        "number": 75,
+        "found": true,
+        "type": "date"
+    },
+    "8": {
+        "text": "July 19th is the day in 1989 that United Airlines flight 232 crashes in Sioux City, Iowa killing 112 of the 296 passengers.",
+        "year": 1989,
+        "number": 201,
+        "found": true,
+        "type": "date"
+    },
+    "9": {
+        "text": "August 24th is the day in 1991 that Ukraine declares itself independent from the Soviet Union.",
+        "year": 1991,
+        "number": 237,
+        "found": true,
+        "type": "date"
+    }
+}
